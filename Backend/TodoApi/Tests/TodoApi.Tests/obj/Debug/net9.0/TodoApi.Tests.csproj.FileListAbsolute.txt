@@ -1,0 +1,9 @@
+C:\Users\shrey\Desktop\Take-home-assignments\Ezra\To-do-list\Backend\TodoApi\Tests\TodoApi.Tests\bin\Debug\net9.0\.msCoverageSourceRootsMapping_TodoApi.Tests
+C:\Users\shrey\Desktop\Take-home-assignments\Ezra\To-do-list\Backend\TodoApi\Tests\TodoApi.Tests\bin\Debug\net9.0\CoverletSourceRootsMapping_TodoApi.Tests
+C:\Users\shrey\Desktop\Take-home-assignments\Ezra\To-do-list\Backend\TodoApi\Tests\TodoApi.Tests\obj\Debug\net9.0\TodoApi.Tests.csproj.AssemblyReference.cache
+C:\Users\shrey\Desktop\Take-home-assignments\Ezra\To-do-list\Backend\TodoApi\Tests\TodoApi.Tests\obj\Debug\net9.0\TodoApi.Tests.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\shrey\Desktop\Take-home-assignments\Ezra\To-do-list\Backend\TodoApi\Tests\TodoApi.Tests\obj\Debug\net9.0\TodoApi.Tests.gentestingplatformentrypointinputcache.cache
+C:\Users\shrey\Desktop\Take-home-assignments\Ezra\To-do-list\Backend\TodoApi\Tests\TodoApi.Tests\obj\Debug\net9.0\TodoApi.Tests.genautoregisteredextensionsinputcache.cache
+C:\Users\shrey\Desktop\Take-home-assignments\Ezra\To-do-list\Backend\TodoApi\Tests\TodoApi.Tests\obj\Debug\net9.0\TodoApi.Tests.AssemblyInfoInputs.cache
+C:\Users\shrey\Desktop\Take-home-assignments\Ezra\To-do-list\Backend\TodoApi\Tests\TodoApi.Tests\obj\Debug\net9.0\TodoApi.Tests.AssemblyInfo.cs
+C:\Users\shrey\Desktop\Take-home-assignments\Ezra\To-do-list\Backend\TodoApi\Tests\TodoApi.Tests\obj\Debug\net9.0\TodoApi.Tests.csproj.CoreCompileInputs.cache
