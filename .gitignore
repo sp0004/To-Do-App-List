@@ -1,0 +1,10 @@
+Release/
+Debug/
+bin/
+**/bin/
+*.log
+*.dll
+# Ignore all obj folders
+obj/
+**/obj/
+**/obj
