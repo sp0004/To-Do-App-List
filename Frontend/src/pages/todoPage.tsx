@@ -25,9 +25,9 @@ const TodoPage: React.FC = () => {
     getTodos();
   }, []);
 
-  // Pass getTodos to children so they can refresh after create/update/delete
+  
   return (
-    <div style={{ maxWidth: 900, margin: '0 auto', padding: 24 }}>
+    <div style={{ maxWidth: 900, padding: 24 ,justifyContent: 'center', alignItems: 'center'}} >
       <h1>To-Do List</h1>
       <CreateModal onCreated={getTodos} />
       <div style={{ marginTop: 32 }}>

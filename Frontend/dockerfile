@@ -6,7 +6,7 @@ COPY package*.json ./
 RUN npm ci --silent
 COPY . .
 RUN npm run build
-
+## multi-stage build
 # Production stage: serve with nginx
 FROM nginx:alpine
 COPY --from=build /app/dist /usr/share/nginx/html

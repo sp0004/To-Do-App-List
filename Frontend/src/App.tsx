@@ -9,7 +9,9 @@ function App() {
   return (
     <ErrorBoundary>
       <PopupProvider>
+        <div className='center-page'>
         <TodoPage />
+        </div>
       </PopupProvider>
     </ErrorBoundary>
   );
