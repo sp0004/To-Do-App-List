@@ -27,14 +27,25 @@ const TodoPage: React.FC = () => {
 
   
   return (
-    <div style={{ maxWidth: 900, padding: 24 ,justifyContent: 'center', alignItems: 'center'}} >
-      <h1>To-Do List</h1>
-      <CreateModal onCreated={getTodos} />
-      <div style={{ marginTop: 32 }}>
-        <PendingList todos={todos.filter(t => !t.isComplete && !t.isDeleted)} loading={loading} onChange={getTodos} />
-      </div>
-      <div style={{ marginTop: 32 }}>
-        <CompletedList todos={todos.filter(t => t.isComplete && !t.isDeleted)} loading={loading} onChange={getTodos} />
+    <div
+      style={{
+        minHeight: '100vh',
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'center',
+        alignItems: 'center',
+        background: '#f8f9fa',
+      }}
+    >
+      <div style={{ maxWidth: 900, width: '100%', padding: 24, background: '#fff', borderRadius: 12, boxShadow: '0 2px 8px rgba(0,0,0,0.08)' }}>
+        <h1 style={{ textAlign: 'center' }}>To-Do List</h1>
+        <CreateModal onCreated={getTodos} />
+        <div style={{ marginTop: 32 }}>
+          <PendingList todos={todos.filter(t => !t.isComplete && !t.isDeleted)} loading={loading} onChange={getTodos} />
+        </div>
+        <div style={{ marginTop: 32 }}>
+          <CompletedList todos={todos.filter(t => t.isComplete && !t.isDeleted)} loading={loading} onChange={getTodos} />
+        </div>
       </div>
     </div>
   );

@@ -1,7 +1,7 @@
 version: '3.8'
 services:
     frontend:
-        build: ./frontend
+        build: ./Frontend
         ports:
             - "3000:80"
         depends_on:
@@ -9,25 +9,27 @@ services:
         networks:
             - my-custom-network
     backend:
-        build: ./backend/todoApi
+        build: ./Backend/TodoApi
         ports:
-            - "5000:5000"
+            - "5000:8080"
         environment:
             - ASPNETCORE_ENVIRONMENT=Development
-            - ConnectionStrings__DefaultConnection=Host=database;Database=ToDoItems;Username=postgres;Password=postgres
+            - ConnectionStrings__DbContext=Host=database;Port=5432;Database=todo;Username=postgres;Password=postgres
         depends_on:
             - database
         networks:
             - my-custom-network
     database:
-        image: postgres
+        image: postgres:17
         restart: always
         environment:
             POSTGRES_USER: postgres
             POSTGRES_PASSWORD: postgres
-            POSTGRES_DB: ToDoItems
+            POSTGRES_DB: todo
         volumes:
             - pgdata:/var/lib/postgresql/data
+        networks:
+            - my-custom-network
 
 volumes:
     pgdata:

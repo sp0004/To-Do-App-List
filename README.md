@@ -105,6 +105,18 @@ A full-stack To-Do List application built with React (TypeScript, Vite, Ant Desi
 - **Backend:** NUnit/Moq for unit/integration tests. See `Backend/TodoApi/Tests/TodoApi.Tests`.
 - **Frontend:** Vitest/Testing Library for React components. See `Frontend/src/tests`.
 
+
+# Stop all services
+docker compose down
+
+# Start services
+docker compose up -d
+
+# View logs
+docker compose logs
+
+# Rebuild and restart
+docker compose up --build -d
 ---
 
 
