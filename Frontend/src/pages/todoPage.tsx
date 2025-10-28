@@ -27,23 +27,14 @@ const TodoPage: React.FC = () => {
 
   
   return (
-    <div
-      style={{
-        minHeight: '100vh',
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'center',
-        alignItems: 'center',
-        background: '#f8f9fa',
-      }}
-    >
-      <div style={{ maxWidth: 900, width: '100%', padding: 24, background: '#fff', borderRadius: 12, boxShadow: '0 2px 8px rgba(0,0,0,0.08)' }}>
-        <h1 style={{ textAlign: 'center' }}>To-Do List</h1>
+    <div className="min-h-screen flex flex-col justify-center items-center bg-gray-50 w-full p-4">
+      <div className="max-w-4xl w-full p-6 bg-white rounded-xl shadow-lg">
+        <h1 className="text-3xl font-bold text-center text-gray-800 mb-6">To-Do List</h1>
         <CreateModal onCreated={getTodos} />
-        <div style={{ marginTop: 32 }}>
+        <div className="mt-8">
           <PendingList todos={todos.filter(t => !t.isComplete && !t.isDeleted)} loading={loading} onChange={getTodos} />
         </div>
-        <div style={{ marginTop: 32 }}>
+        <div className="mt-8">
           <CompletedList todos={todos.filter(t => t.isComplete && !t.isDeleted)} loading={loading} onChange={getTodos} />
         </div>
       </div>
